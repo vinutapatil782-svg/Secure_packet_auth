@@ -20,8 +20,8 @@ async def test_project(dut):
     dut.rst_n.value = 1
 
     # Test values
-    dut.ui_in.value = 8'hAB
-    dut.uio_in.value = 8'hA5
+    dut.ui_in.value = 0xAB
+    dut.uio_in.value = 0xA5
 
     await ClockCycles(dut.clk, 5)
 
